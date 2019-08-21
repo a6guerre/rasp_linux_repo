@@ -837,7 +837,7 @@ endchoice
 config CMDLINE
 	string "Kernel command line arguments string"
 	depends on CMDLINE_OVERWRITE || CMDLINE_EXTEND
-	default "console=ttySC1,115200"
+	default "console=ttySC1,115200 quiet"
 
 endmenu
 

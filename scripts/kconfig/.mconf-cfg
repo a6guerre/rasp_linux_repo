@@ -1,2 +1,2 @@
-cflags="-D_GNU_SOURCE -I/usr/include/ncursesw"
-libs="-lncursesw"
+cflags="-D_GNU_SOURCE -D_DEFAULT_SOURCE -I/usr/include/ncursesw"
+libs="-lncursesw -ltinfo"

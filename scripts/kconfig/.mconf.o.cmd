@@ -1,4 +1,4 @@
-cmd_scripts/kconfig/mconf.o := gcc -Wp,-MD,scripts/kconfig/.mconf.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89      -D_GNU_SOURCE -D_DEFAULT_SOURCE -I/usr/include/ncursesw -c -o scripts/kconfig/mconf.o scripts/kconfig/mconf.c
+cmd_scripts/kconfig/mconf.o := gcc -Wp,-MD,scripts/kconfig/.mconf.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89      -D_GNU_SOURCE -c -o scripts/kconfig/mconf.o scripts/kconfig/mconf.c
 
 source_scripts/kconfig/mconf.o := scripts/kconfig/mconf.c
 
@@ -121,18 +121,14 @@ deps_scripts/kconfig/mconf.o := \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stdbool.h \
   scripts/kconfig/lkc_proto.h \
   scripts/kconfig/lxdialog/dialog.h \
-  /usr/include/ncursesw/ncurses.h \
-  /usr/include/ncursesw/ncurses_dll.h \
+  /usr/include/curses.h \
+  /usr/include/ncurses_dll.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
-  /usr/include/ncursesw/unctrl.h \
-  /usr/include/ncursesw/curses.h \
+  /usr/include/unctrl.h \
+  /usr/include/curses.h \
 
 scripts/kconfig/mconf.o: $(deps_scripts/kconfig/mconf.o)
 
